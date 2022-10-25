@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#eye{
+			width: 650px;
+			height: 400px;
+			background-image: url(eye.jpg);
+
+			animation-name: creep;
+			background-size: cover;
+			background-repeat: no-repeat;
+			animation-duration: 5s;
+			animation-iteration-count: 1;
+			background-position: center;
+		}
+
+		@keyframes creep{
+
+			0%{
+				background-image: url(eye.jpg);
+			}
+
+			50%{
+				background-image: url(handeye.jpg);
+			}
+			100%{
+				background-image: url(eye.jpg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<center><div id="eye"></div></center>
+</body>
+</html>

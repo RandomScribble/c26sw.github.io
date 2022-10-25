@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#tuktuk{
+			width: 200px;
+			height: 200px;
+			background-image: url(https://static.wikia.nocookie.net/rayaandthelastdragon/images/e/e4/Tuk_Tuk_Render.png/revision/latest?cb=20210311062209);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+		#scoreboard{
+			font-size: 100px;
+			width: 200px;
+			height: 200px;
+			border: 10px solid black;
+
+
+		}
+
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id="scoreboard"></div>
+
+
+	<script type="text/javascript">
+		
+		let score = 0;
+		let scoreboard = document.getElementById('scoreboard');
+			function increaseScore () {
+			score = score + 1;
+			console.log(score)
+			scoreboard.innerText = score;
+			}
+
+		alert("There flap the tatters of the king in dim carcosa")
+		console.log("salutations sam")
+		let name = "sam"
+		console.log("hey " + name)
+		document.addEventListener(
+			"click",function(event){
+				console.log(event.clientX, event.clientY)
+				increaseScore();
+				tuktuk.style.left = event.clientX + -100 + "px";
+				tuktuk.style.top = event.clientY + -100 + "px";
+			}	
+
+
+			)
+
+		
+
+
+	</script>
+
+	<div id=tuktuk ></div>
+
+
+
+</body>
+</html>

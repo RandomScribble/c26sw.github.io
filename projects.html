@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+
 	<style type="text/css">
-		#menu {
+		
+		#menu {	
 			height:  80px;
 			width: 100%;
 			background-color: dimgrey;
@@ -62,24 +64,52 @@
 			transition: 3s;
 
 		}
+
+
+
+		#eye{
+			width: 1000px;
+			height: 800px;
+			background-image: url(eye.jpg);
+
+			animation-name: creep;
+			background-size: cover;
+			background-repeat: no-repeat;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			background-position: center;
+		}
+
+		@keyframes creep{
+
+			0%{
+				background-image: url(eye.jpg);
+			}
+
+			50%{
+				background-image: url(handeye.jpg);
+			}
+			100%{
+				background-image: url(eye.jpg);
+			}
+		}
 	</style>
 </head>
 <body>
- 	<div id="menu">
- 		<a href="journal.html">
- 			<div class="button">journal</div>
+	<center><div id="eye"></div></center>
+	
+	<div id="menu">
+ 		<a href="">
+ 			<div class="button"></div>
  		</a>
- 		<a href="projects.html">
- 			<div class="button">projects</div>
+ 		<a href="">
+ 			<div class="button"></div>
  		</a>
- 		<a href="aboutme.html">
- 			<div class="button">about me</div>
+ 		<a href="">
+ 			<div class="button"></div>
  		</a>
 
 
  	</div>
-
- <div id="background"></div>
-
 </body>
 </html>
