@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style type="text/css">
+	.group1{
+		background-color: black;
+		width: 150px;
+		height: 150px;
+		background-repeat: no-repeat;
+		position: absolute;
+		transition: 4s;
+}
+	
+	.group2{
+		background-color: blue;
+		width: 150px;
+		height: 150px;
+		background-repeat: no-repeat;
+		position: absolute;
+		transition: 2s;
+}
+	.group3{
+
+		background-color: red;
+		width:75px;
+		height: 75px;
+		background-repeat: no-repeat;
+		position: absolute;
+		transition: 3s;
+
+
+
+	}
+	#box2{
+		opacity:8;
+		width: 200px;
+		height: 200px;
+	}
+
+	#box4{
+		opacity:8;
+		width: 200px;
+		height: 200px;
+	}
+</style>
+
+
+
+
+</head>
+
+
+<body>
+
+<div id=box1 class="group2"></div>
+<div id=box2 class="group2"></div>
+<div id=box3 class="group1"></div>
+<div id=box4 class="group1"></div>
+<div id=box5 class="group3"></div>
+<div id=box6 class="group3"></div>
+<div id=box7 class="group1"></div>
+<div id=box8 class="group2"></div>
+<div id=box9 class="group3"></div>
+
+
+<script type="text/javascript">
+	document.addEventListener("click", function(event){
+		box1.style.top = event.clientY + "px";
+		box1.style.left = event.clientX + "px";
+
+	})
+	document.addEventListener("click", function(event){
+		box3.style.top = event.clientY + "px";
+		box3.style.left = event.clientX + "px";
+
+	})
+
+	document.addEventListener("mousemove", function(event){
+		box2.style.top = event.clientY + "px";
+		box2.style.left = event.clientX + "px";
+
+	})
+	document.addEventListener("mousemove", function(event){
+		box4.style.top = event.clientY + "px";
+		box4.style.left = event.clientX + "px";
+
+	})
+	document.addEventListener("mousemove", function(event){
+		box5.style.top = event.clientY + "px";
+		box6.style.top = event.clientX + "px";
+
+	})
+	document.addEventListener("mousemove", function(event){
+		box6.style.left = event.clientY + "px";
+		box5.style.left = event.clientX + "px";
+
+	})
+	document.addEventListener("click", function(event){
+		box7.style.left = -event.clientY + 75 + "px";
+		box7.style.left = -event.clientX + 50 + "px";
+
+	})
+	document.addEventListener("click", function(event){
+		box8.style.left = -event.clientY -50 + "px";
+		box8.style.left = -event.clientX -75 + "px";
+
+	})
+	document.addEventListener("click", function(event){
+		box9.style.left = event.clientY + event.clientX + "px";
+		box9.style.left = -event.clientX + event.clientY + "px";
+
+	})
+
+	</script>
+</body>
+</html>

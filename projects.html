@@ -6,107 +6,50 @@
 	<title></title>
 
 	<style type="text/css">
-		
-		#menu {	
-			height:  80px;
-			width: 100%;
-			background-color: dimgrey;
-			position: fixed;
-			top: 0%;
-			z-index: 1;
-			padding-top: 20px;
-			opacity: 0.5;
-		}
-
-		.button{
-			display: inline-block;
-			color: darkgrey;
-			font-size: 40px;
-			font-family: monospace;
-			height: 100%;
-			width: 30%;
-			text-align: center;
-			transition: 2s;
-
+		.button {
+			color:darkgrey;
+			font-size: 30px;
+			font-family:monospace;
+			height:100%;
+			width:30%;
+			text-align:center;
+			transition:2s;
 
 		}
-
 		.button:hover{
-			transform: scale(1.25);
-			color: lightgrey;
-			transition: 2s;
-
-
+			transform:scale(1.25);
+			color:lightgrey;
 
 		}
-
-		body{
-			margin: 0;
-			background-repeat: no-repeat;
-
-		}
-
+		
 		#background{
-			background-image: url(file:///Users/c26sw/Desktop/Website%20Aesthetic%20Idea%20Pencil%20Drawing/bc08fd9ade450b42807bb816dd1db65744b58d33.jpg);
-			background-size: cover;
-			width: 100%px;
-			height: 1000px;
-			opacity: 0.0;
-			transition: 3s;
-			overflow-x: hidden;
-
-
-		}
-
-		#background:hover{
-			
-			opacity: 0.9;
-			transition: 3s;
-
-		}
-
-
-
-		#eye{
-			width: 1000px;
-			height: 800px;
-			background-image: url(eye.jpg);
-
-			animation-name: creep;
-			background-size: cover;
+			background-image: url(darkMountains.jpg);
+			width:100%px;
+			height:900px;
+			background-position: fixed;
+			overflow-x:hidden;
 			background-repeat: no-repeat;
-			animation-duration: 5s;
-			animation-iteration-count: infinite;
-			background-position: center;
+
+
 		}
 
-		@keyframes creep{
-
-			0%{
-				background-image: url(eye.jpg);
-			}
-
-			50%{
-				background-image: url(handeye.jpg);
-			}
-			100%{
-				background-image: url(eye.jpg);
-			}
-		}
+		
 	</style>
 </head>
 <body>
 	<center><div id="eye"></div></center>
-	
+
+<div id="background"></div>
+
 	<div id="menu">
- 		<a href="">
- 			<div class="button"></div>
+ 		<a href="file:///Users/c26sw/Desktop/randomscribble.github.io/cursorPuzzle.html">
+ 			<div class="button">Square Art</div>
  		</a>
- 		<a href="">
- 			<div class="button"></div>
+ 		<a href="file:///Users/c26sw/Desktop/randomscribble.github.io/musicPlayer.html">
+ 			<div class="button">Music Player</div>
  		</a>
- 		<a href="">
- 			<div class="button"></div>
+ 		<a href="file:///Users/c26sw/Desktop/randomscribble.github.io/cursor.html">
+ 			<div class="button">Magic Cursor</div>
  		</a>
 
 

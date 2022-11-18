@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		#cursor{
+			width: 50px;
+			height: 50px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(darkcursor.jpg);
+			position: absolute;
+			transition: 2s;
+			
+
+		}
+
+	body{
+		cursor: none;
+
+	}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function (event){
+			console.log(event.clientX, event.clientY)
+			console.log(event.clientX, event.clientY);
+			cursor.style.left = event.clientX -25 + "px";
+			cursor.style.top = event.clientY -25 + "px";
+
+		})
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>
