@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		#tukTuk{
+			width: 100%;
+			height: 100%;
+			background-image: url("./cardForAlex/tukTuk.jpg");
+			position: absolute;
+			background-repeat: no-repeat;
+
+		}
+
+		.inferno{
+			scale: 0.3;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-image: url("./cardForAlex/fire.jpg");
+
+
+
+		}
+		
+		#text{	
+			position: absolute;
+			font-size:200px;
+			text-align: center;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="tukTuk"></div>
+	<div id="text"> Happy Valentines Day!
+	</div>
+<div class = "inferno"></div>
+
+	<script type="text/javascript">
+		
+
+		
+
+
+		document.addEventListener("mousemove", function makeFire(){
+			var fires = document.createElement("div");
+			document.body.appendChild(fires);
+			fires.classList.add("inferno");
+			fires.style.top = event.clientY - 500 + "px";
+			fires.style.left = event.clientX - 500 +"px";
+		})
+
+
+	</script>
+</body>
+</html>
