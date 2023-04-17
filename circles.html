@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	</title>
+<style type="text/css">
+	.circle{
+		position: absolute;
+		top:0px;
+		background-color: blue;
+		width:100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+
+	</style>
+</head>
+<body>
+<!-- I can make circles
+I can change colors 
+I can make the circles follow my mouse
+I'm not sure about the shaking and vibrating
+I'm not sure about the condensing mouse move
+There's nothing I know I can't do.(out of these options) -->
+
+
+
+<script type="text/javascript">
+		document.addEventListener("mousemove", function makeCircle (event){
+
+			var circle = document.createElement("div")
+			document.body.appendChild(circle)
+			circle.classList.add("circle")
+			console.log(event.clientX, event.clientY)
+			console.log(event.clientX, event.clientY);
+			circle.style.left = event.clientX -50 + "px";
+			circle.style.top = event.clientY -50 + "px";
+
+
+			function changeColor(){
+			red = Math.floor(Math.random()*255)
+			blue = Math.floor(Math.random()*255)
+			green = Math.floor(Math.random()*255)
+			circle.style.backgroundColor = "rgb("+ red + "," + blue + "," + green +")";
+			}
+
+			setInterval(changeColor, 1000);
+
+
+})
+
+		
+
+
+
+	</script>
+</body>
+</html>

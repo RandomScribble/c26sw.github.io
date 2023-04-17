@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vibrating Circles</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		canvas {
+			display: block;
+		}
+		canvas {
+    background-color: #222;
+}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script src="vibrating-circles.js">
+		// Get the canvas element and context
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+// Set the canvas dimensions to the window size
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Set up an array to hold the circles
+var circles = [];
+
+// Set up some variables for the mouse position
+var mouseX = canvas.width / 2;
+var mouseY = canvas.height / 2;
+
+// Set up some variables for the circle movement
+var circleSpeed = 2;
+var circleMaxSpeed = 10;
+var circleAcceleration = 0.1;
+var circleFriction = 0.95;
+var circleVibration = 10;
+var circleVibrationSpeed = 0.1;
+var circleVibrationAngle = 0;
+
+// Set up some variables for the circle colors
+var circleColors = ["#f44336", "#e91e63", "#9c27b0", "#673ab7", "#3f51b5", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ffeb3b", "#ffc107", "#ff9800", "#ff5722"];
+
+// Create the circles
+for (var i = 0; i < 50; i++) {
+    circles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: 10 + Math.random() * 30,
+        color: circleColors[Math.floor(Math.random() * circleColors.length)],
+        speedX: 0,
+        speedY: 0,
+        targetX: Math.random() * canvas.width,
+        targetY: Math.random() * canvas.height
+    });
+}
+
+// Update the mouse position
+function updateMousePosition(event) {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+}
+
+// Update the circles
+function updateCircles() {
+    for (var i = 0; i < circles.length; i++) {
+        var circle = circles[i];
+
+        // Calculate the distance from the circle to the mouse
+        var distanceX = mouseX - circle.x;
+        var distanceY = mouseY - circle.y;
+        var distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+        // If the distance is less than the vibration distance, vibrate the circle
+        if (distance < circleVibration) {
+            circleVibrationAngle += circleVibrationSpeed;
+            circle.speedX += Math.sin(circleVibrationAngle) * circleAcceleration;
+            circle.speedY += Math.cos(circleVibrationAngle) * circleAcceleration;
+        }
+
+        // Calculate the angle from the circle to the target position
+        var angle = Math.atan2(circle.targetY - circle.y, circle.targetX - circle.x);
+
+        // Calculate the distance from the circle to the target position
+        var targetDistanceX = circle.targetX - circle.x;
+        var targetDistanceY = circle.targetY - circle.y;
+        var targetDistance = Math.sqrt(targetDistance
+
+
+
+
+Regenerate response
+
+
+		
+	</script>
+</body>
+</html>
