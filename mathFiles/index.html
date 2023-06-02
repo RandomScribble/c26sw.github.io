@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style type="text/css">
+		.text{
+			font: 20px;
+			position: fixed;
+			top: -120px;
+		}
+		#emails{
+			background-image: url(emailExample.png);
+			top:0px;
+			right: 0px;
+			width: 1300px;
+			height: 400px;
+			background-repeat: no-repeat;
+		}
+
+		#eyes{
+			background-image:url(eyesbleeding1.jpg);
+			height:1500px;
+			width:1500px;
+			opacity: 0.3;
+			background-repeat: no-repeat;
+		}
+
+		#code{
+			background-image: url(codeExample.png);
+			width: 800px;
+			height: 475px;
+
+		}
+		
+	</style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<iframe src="https://www.desmos.com/calculator/66l0bdyvml?embed" width="400" height="400" style="border: 1px solid #ccc" frameborder=0>
+					</iframe>
+					<div class="text">Dear Isaac. I know you can't see this, but I wanted to create something so your story is remembered. </div>
+						
+				</section>
+				<section>
+					<iframe src="https://www.desmos.com/calculator/q66vyi6q2w?embed" width="400" height="400" style="border: 1px solid #ccc" frameborder=0></iframe>
+					<div class="text">I designed a website to save all of your equations and the emails you sent to me. </div>
+
+				</section>
+				<section>
+					<iframe src="https://www.desmos.com/calculator/azkt3x92d4?embed" width="300" height="300" style="border: 1px solid #ccc" frameborder=0></iframe>
+					<div class="text">Using HTML, CSS, and Javascript, I embedded the animated equations from desmos onto a website.</div>
+				</section>
+				<section>
+					<div id="emails"></div>
+
+					<div class="text">I also used the same languages to create an email interface to display our correspondence</div>
+				</section>
+				<section>
+					<div id="code"></div>
+
+					<div class="text">Here is what the code looks like (some of it anyway)</div>
+				</section>
+				<section>
+					<div class="text">There are still some things I can't explain though. I am still looking. I will find them.</div>
+				</section>
+				<section>
+					<div id="eyes"></div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
